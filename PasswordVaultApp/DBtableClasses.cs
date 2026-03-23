@@ -1,19 +1,16 @@
-
-using System.Configuration;
-
 namespace PasswordVaultApp;
 
-public struct Credentials
+public class Credentials
 
 {
     public int Id {get; set;}
-    public int GroupID { get; set; }
+    public int GroupID { get; set;}
     public string Name { get; set; }
     public string Username { get; set; }
     public string Password { get; set; }
 }
 
-public struct MainPassword
+public class MainPassword
 {
     public int Id{get; set;}
     public string mainHash { get; private set; }
@@ -34,7 +31,7 @@ public struct MainPassword
 
 }
 
-public struct Group
+public class Group
 {
     public int Id{get; private set;}
     public string Name{get; private set;}
